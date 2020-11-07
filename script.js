@@ -36,6 +36,7 @@ function foodChoice() {
 
 		// $("#clear").append(clearButton);
 		
+		
 
 
 	});
