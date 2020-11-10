@@ -58,8 +58,38 @@ function caloriesBurned(){
 		console.log (bikingMets);
 		var joggingMets = response["running"]["activity 473"]["MET"];
 		console.log(joggingMets);
-		var bikingCalorie30min = bikingMets * weight * (.454 * 3.5)/200* 30; 
+		// var bikingCalorie30min = bikingMets * weight * (.454 * 3.5)/200* 30; 
+		var yogaMets = response["conditioning exercise"]["activity 68"]["MET"];
+		console.log(yogaMets);
+		var walkingMets = response["home activities"]["activity 192"]["MET"];
+		console.log(walkingMets);
+		var circuitTrainingMets = response["conditioning exercise"]["activity 36"]["MET"];
+		console.log(circuitTrainingMets);
+		var weightliftingMets = response["conditioning exercise"]["activity 36"]["MET"];
+		console.log(weightliftingMets);
+		var highImpactDanceMets = response["dancing"]["activity 82"]["MET"];	
+		console.log(highImpactDanceMets);
+		var lowImpactDanceMets = response["dancing"]["activity 81"]["MET"];
+		console.log(lowImpactDanceMets);
+		var ellipticalMets = response["conditioning exercise"]["activity 38"]["MET"];
+		console.log(ellipticalMets);
+		var pilatesMets = response["conditioning exercise"]["activity 57"]["MET"];
+		console.log(pilatesMets);
+		var metFormula = (.454 *3.5)/200*30;
+		var bikingCalorie30min = bikingMets * weight * metFormula;
+		var joggingCalorie30min = joggingMets * weight * metFormula;
+		var yogaCalorie30min = yogaMets * weight * metFormula;
+		var walkingCalorie30min = walkingMets * weight * metFormula;
+		var circuitTraining30min = circuitTrainingMets * weight * metFormula;
+		var weightlifting30min = weightliftingMets * weight * metFormula;
+		var highImpactDance30min = highImpactDanceMets * weight * metFormula;
+		var lowImpactDance30min = lowImpactDanceMets * weight * metFormula;
+		var ellipticalCalorie30min = ellipticalMets * weight * metFormula;
+		var pilatesMets30min = pilatesMets * weight * metFormula;
+		
+
 		$("#total").append("",bikingCalorie30min);
+
 	});
 }
 
