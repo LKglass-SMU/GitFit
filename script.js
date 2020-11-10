@@ -117,6 +117,7 @@ $(".submit-button").on("click", function(event){
 	event.preventDefault()
 	var weight = $(".weight").val().trim();
 	localStorage.setItem("weight", weight);
+	 
 	
 	
 })
