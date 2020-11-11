@@ -90,7 +90,7 @@ function caloriesBurned(){
 		var pilatesMets30min = pilatesMets * weight * metFormula;
 		
 
-		$(".activities").append("",bikingCalorie30min);
+		$(".card-content").append("",bikingCalorie30min);
 		console.log(weightInput);
 	});
 }
@@ -112,6 +112,8 @@ $(document).on("click","#total-calories", function(){
 	
 })
 
+
+
 $(document).on("click","#weight-submit-button", function(){
 	// var foodInput = $(".food-choice").val();
 	var weightInput = $("#weight-text").val();
@@ -130,6 +132,12 @@ $(document).on("click","#weight-submit-button", function(){
 
 
 	
+})
+
+$(document).on("click",".delete-btn", function(){
+	$(this).siblings().remove();
+	$(this).remove();
+	calculateCalories();
 })
 
 
