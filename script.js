@@ -26,10 +26,10 @@ function foodChoice() {
 	// var totalCalories = calorieCount;
 	$.ajax(settings).done(function (response) {
 		console.log(response);
-		
-		var liEl = $("<li>").append(foodChoice + ":" + " " + response.hits[0].fields.nf_calories + " calories");
-		
-		$(".list-title").prepend(liEl)	;
+		var resetButton = $("<button>");
+		var liEl = $("<li>").append(foodChoice + ":" + " " + response.hits[0].fields.nf_calories + " calories")
+		liEl.append(resetButton);
+		$(".list-title").prepend(liEl)
 		
 		
 
