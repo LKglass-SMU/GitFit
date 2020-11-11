@@ -26,10 +26,12 @@ function foodChoice() {
 	// var totalCalories = calorieCount;
 	$.ajax(settings).done(function (response) {
 		console.log(response);
-		var resetButton = $("<button>");
-		var liEl = $("<li>").append(foodChoice + ":" + " " + response.hits[0].fields.nf_calories + " calories")
-		liEl.append(resetButton);
-		$(".list-title").prepend(liEl)
+		var itemDiv = $("<div>").attr("style", "display: flex; justify-content: space-between; width: 70%;")
+		var resetButton = $("<button>").addClass("delete-btn").text("delete");
+		var liEl = $("<div>").text(foodChoice + ":" + " " + response.hits[0].fields.nf_calories + " calories").addClass("li-tag");
+		itemDiv.append(liEl, resetButton)
+		$(".list-title").prepend(itemDiv)
+		console.log(liEl);
 		
 		
 
@@ -88,14 +90,40 @@ function caloriesBurned(){
 		var pilatesMets30min = pilatesMets * weight * metFormula;
 		
 
-		$("#total").append("",bikingCalorie30min);
-
+		$(".activities").append("",bikingCalorie30min);
+		console.log(weightInput);
 	});
 }
 
 $(document).on("click","#total-calories", function(){
+	var foodInput = $(".food-choice").val();
+	// var weightInput = $("#weight-text").val();
+	if(!foodInput){
+		alert("Must enter a value");
+		return;	
+	};
 	
 	calculateCalories();
+	// caloriesBurned();
+
+
+
+
+	
+})
+
+$(document).on("click","#weight-submit-button", function(){
+	// var foodInput = $(".food-choice").val();
+	var weightInput = $("#weight-text").val();
+	
+	if(!weightInput){
+		alert("Must enter a value");
+		return;	
+		
+	};
+	
+	console.log(weightInput);
+	// calculateCalories();
 	caloriesBurned();
 
 
@@ -103,6 +131,9 @@ $(document).on("click","#total-calories", function(){
 
 	
 })
+
+
+
 $("#clear-btn").on("click", function(){
 	$(".list-title").empty();
 	$("#total").empty();
@@ -117,6 +148,8 @@ $(".submit-button").on("click", function(event){
 	event.preventDefault()
 	var weight = $(".weight").val().trim();
 	localStorage.setItem("weight", weight);
+	// $(".food-items").append(".list-title").content();
+	// console.log((".list-title").content())
 	 
 	
 	

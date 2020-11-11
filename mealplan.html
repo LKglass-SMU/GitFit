@@ -88,12 +88,12 @@
                                     id="todo-text" />
                                 <button class="add-to-list">Add To List</button>
                             </form>
-                            <form id="weight-form" method="POST">
+                            <!-- <form id="weight-form" method="POST">
                                 <label for="weight-text">Enter Weight In Pounds:</label>
                                 <input class="weight" type="text" placeholder="Enter Weight" name="weight-text"
-                                    id="weight-text" />
-                                <button class="submit-button">Submit</button>
-                            </form>
+                                    id="weight-text">
+                                <button class="calorie-submit-button">Submit</button>
+                            </form> -->
                             <!-- <p>Todo Count: <span id="todo-count">0</span></p> -->
                             <ul id="food-list"></ul>
                             <!-- <div id = "clear"> -->
@@ -106,13 +106,15 @@
                     </div>
                     <div class="card" style="color: black;">
                         <div class="card-content">
-                            <p class="list-title" style="color: black;">
-                            </p>
+                            <div class="list-title" style="color: black; display: flex; justify-content: center; align-items: center;  flex-direction: column;">
+                            </div>
                         </div>
                         <footer class="card-footer">
                             <button id="total-calories">Total Calories:</button><span id="total"></span>
                             <div id = "reset-container">
-                                <button id="clear-btn">Reset</button>
+                             <button>  
+                                 <a id="submit-food" href = "login.html">Submit</a>
+                             </button>   
                             </div>
                         </footer>
                         

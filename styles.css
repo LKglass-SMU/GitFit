@@ -67,3 +67,20 @@ h1{
   font-size: 2em;
   
 }
+.delete-btn{
+  background-color: red;
+  color: white;
+  font-weight: bolder;
+  margin-left: 30px;
+  margin-bottom: 5px;
+}
+/* .li-tag{
+    list-style-type: none; */
+    
+/* } */
+.card-content{
+  text-align: center;
+}
+#submit-food{
+  color: black;
+}
