@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Landing - Free Bulma template</title>
-    <!-- "<link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">" -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-    <!-- Bulma Version 0.9.0-->
-    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>GitFit</title>
+        <!-- <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+        <!-- Bulma Version 0.9.0-->
+        <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
 
 <body id="body">
     <section class="hero is-info is-fullheight">
         <div class="hero-head">
             <nav class="navbar">
                 <div class="container">
-                    <div class="navbar-brand">Git||--||Fit
-                        <!-- <a class="navbar-item" href="../">
-                            <img src="http://bulma.io/images/bulma-type-white.png" alt="Logo">
-                        </a> -->
+                    <div class="navbar-brand logo">Git||--||Fit
                         <span class="navbar-burger burger" data-target="navbarMenu">
                             <span></span>
                             <span></span>
@@ -40,22 +37,6 @@
                                 </a>
                             </span>
                             <span class="navbar-item">
-                                <a class="button is-white is-outlined" href="login.html">
-                                    <span class="icon">
-                                        <i class="fa fa-superpowers"></i>
-                                    </span>
-                                    <span>Login</span>
-                                </a>
-                            </span>
-                            <span class="navbar-item">
-                                <a class="button is-white is-outlined" href="signup.html">
-                                    <span class="icon">
-                                        <i class="fa fa-book"></i>
-                                    </span>
-                                    <span>Signup</span>
-                                </a>
-                            </span>
-                            <span class="navbar-item">
                                 <a class="button is-white is-outlined" href="mealplan.html">
                                     <span class="icon">
                                         <i class="fa fa-github"></i>
@@ -63,6 +44,14 @@
                                     <span>Meal Plan
 
                                     </span>
+                                </a>
+                            </span>
+                            <span class="navbar-item">
+                                <a class="button is-white is-outlined" href="activities.html">
+                                    <span class="icon">
+                                        <i class="fa fa-superpowers"></i>
+                                    </span>
+                                    <span>Activities</span>
                                 </a>
                             </span>
                         </div>
@@ -74,7 +63,7 @@
             <div class="container has-text-centered">
                 <div class="column is-6 is-offset-3">
                     <h1 class="title">
-                        Git||--||Fit
+                        <span class="logo"> Git||--||Fit</span>
                     </h1>
                     <h2 class="subtitle">
                         $this is the best software platform for running an internet business. We handle billions of
@@ -106,19 +95,20 @@
                     </div>
                     <div class="card" style="color: black;">
                         <div class="card-content">
-                            <div class="list-title" style="color: black; display: flex; justify-content: center; align-items: center;  flex-direction: column;">
+                            <div class="list-title"
+                                style="color: black; display: flex; justify-content: center; align-items: center;  flex-direction: column;">
                             </div>
                         </div>
                         <footer class="card-footer">
-                            <h5>Total Calories: <span id = "total"></span></h5>
+                            <h5>Total Calories: <span id="total"></span></h5>
                             <!-- <button id="total-calories">Total Calories:</button><span id="total"></span> -->
-                            <div id = "reset-container">
-                             <button id = "submit-foods"> 
-                                 <a id="submit-food" href = "login.html">Submit</a>
-                             </button>   
+                            <div id="reset-container">
+                                <button id="submit-foods">
+                                    <a id="submit-food" href="activities.html">Submit</a>
+                                </button>
                             </div>
                         </footer>
-                        
+
                     </div>
                 </div>
             </div>

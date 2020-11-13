@@ -226,6 +226,7 @@ $("#clear-btn").on("click", function(){
 $(".add-to-list").on("click", function (event) {
 	event.preventDefault();
 	foodChoice();
+	$(".food-choice").empty();
 })
 
 // $(".submit-button").on("click", function(event){
