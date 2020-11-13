@@ -4,7 +4,7 @@ body {
   font-size: 14px;
   font-weight: 300;
 }
-html {
+/* html {
   overflow-y: hidden !important;
   background-image: url('food.jpg') !important;
   -webkit-background-size: cover;
@@ -13,7 +13,7 @@ html {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
 .hero.is-success {
   background: #f2f6fa;
 }
