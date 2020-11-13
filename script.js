@@ -228,7 +228,6 @@ $(".add-to-list").on("click", function (event) {
 	foodChoice();
 })
 
-
 // $(".submit-button").on("click", function(event){
 // 	event.preventDefault()
 // 	var weight = $(".weight").val().trim();
@@ -239,3 +238,5 @@ $(".add-to-list").on("click", function (event) {
 	
 	
 // })
+var totalFoodCalories = localStorage.getItem("calories");
+$("#repeat-calories").text(totalFoodCalories);
