@@ -3,8 +3,10 @@ body {
   font-family: 'Quicksand', serif;
   font-size: 14px;
   font-weight: 300;
+  
 }
-/* html {
+ /*html {
+   background-image: url(/mukuko-studio-tPKQwYHy8q4-unsplash.jpg);
   overflow-y: hidden !important;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -13,9 +15,18 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 } */
-.hero.is-success {
-  background: #f2f6fa;
+html{ 
+  background-image: url(/mukuko-studio-tPKQwYHy8q4-unsplash.jpg) ;
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-attachment: fixed;
+  background-size:  cover;
+  /*background-color: #999;*/
+
 }
+/*.hero.is-success {
+  background: #f2f6fa;
+}*/
 .hero .nav,
 .hero.is-success .nav {
   -webkit-box-shadow: none;
@@ -57,8 +68,12 @@ h1{
   text-align: center;
   font-size: 40px;
 }
-#home-text{
+.home-text{
   text-align: center;
+  font-size: 25px; 
+  color: white;
+  margin-right: 150px; 
+  margin-left: 150px;
 }
 .navbar-brand{
   font-size: 2em;
@@ -91,4 +106,9 @@ h1{
   width: 250px;
   height: 250px;
   padding: 40px;
+}
+.logo {
+  color: maroon;
+  font-weight: bold;
+  font-family: 'Gill sans',sans-serif;
 }
