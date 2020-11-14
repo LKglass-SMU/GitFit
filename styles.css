@@ -16,7 +16,7 @@ body {
   background-repeat: no-repeat;
 } */
 html{ 
-  background-image: url(/mukuko-studio-tPKQwYHy8q4-unsplash.jpg) ;
+  /* background-image: url(/mukuko-studio-tPKQwYHy8q4-unsplash.jpg) ; */
   background-position: center center;
   background-repeat:  no-repeat;
   background-attachment: fixed;
@@ -92,6 +92,7 @@ h1{
 /* } */
 .card-content{
   text-align: center;
+  background-color: lightgrey;
 }
 #submit-food{
   color: black;
