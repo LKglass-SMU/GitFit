@@ -6,16 +6,18 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>GitFit</title>
-        <!-- <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon"> -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-        <!-- Bulma Version 0.9.0-->
         <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
 
 <body id="body">
-    <section class="hero is-info is-fullheight">
+    <section class="hero is-fullheight" style="background-image: url(./images/mukuko-studio-tPKQwYHy8q4-unsplash.jpg);background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;">
+    
         <div class="hero-head">
             <nav class="navbar">
                 <div class="container">
@@ -63,37 +65,25 @@
             <div class="container has-text-centered">
                 <div class="column is-6 is-offset-3">
                     <h1 class="title">
-                        <span class="logo"> Git||--||Fit</span>
+                        <span class="logo"> Meal Plan</span>
                     </h1>
-                    <h2 class="subtitle">
-                        $this is the best software platform for running an internet business. We handle billions of
-                        dollars every year for forward-thinking businesses around the world.
+                    <h2 class="subtitle"style = "color: white;">
+                        Enter your food choices to calculate your total caloric intake. Submit you meal plan to determine the activity necessary for a calorie deficit.
                     </h2>
-                    <div class="box">
+                    <div class="box" style="background-color: lightgray;">
                         <div class="todos">
-                            <form id="todo-form" method="POST">
-                                <label for="todo-text">Enter Food Choice:</label>
+                            <form id="todo-form"  method="POST">
+                                <label for="todo-text" style= "color: black; background-color: lightgray;">Enter Food Choice:</label>
                                 <input class="food-choice" type="text" placeholder="Enter Food Choice" name="todo-text"
                                     id="todo-text" />
                                 <button class="add-to-list">Add To List</button>
                             </form>
-                            <!-- <form id="weight-form" method="POST">
-                                <label for="weight-text">Enter Weight In Pounds:</label>
-                                <input class="weight" type="text" placeholder="Enter Weight" name="weight-text"
-                                    id="weight-text">
-                                <button class="calorie-submit-button">Submit</button>
-                            </form> -->
-                            <!-- <p>Todo Count: <span id="todo-count">0</span></p> -->
                             <ul id="food-list"></ul>
-                            <!-- <div id = "clear"> -->
-
+                         
                         </div>
-                        <!-- <div id = "clear"> -->
-                        <!-- <button id="clear-btn">Reset</button> -->
-                        <!-- </div>     -->
 
                     </div>
-                    <div class="card" style="color: black;">
+                    <div class="card" style="color: black; background-color: lightgray;">
                         <div class="card-content">
                             <div class="list-title"
                                 style="color: black; display: flex; justify-content: center; align-items: center;  flex-direction: column;">
@@ -101,7 +91,6 @@
                         </div>
                         <footer class="card-footer">
                             <h5>Total Calories: <span id="total"></span></h5>
-                            <!-- <button id="total-calories">Total Calories:</button><span id="total"></span> -->
                             <div id="reset-container">
                                 <button id="submit-foods">
                                     <a id="submit-food" href="activities.html">Submit</a>
