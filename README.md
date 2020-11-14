@@ -17,8 +17,7 @@ This project is created with:
 
 This project has been deployed to GitHub Pages.  To run follow the link below:
 
-[Deployed Application]
-
+[Deployed Application](https://lkglass-smu.github.io/GitFit/)
 <img src = "https://github.com/LKglass-SMU/Project1/blob/main/images/68520EE9-DE55-409A-B249-5A70C36B0C0B_1_105_c.jpeg">
 <img src = "https://github.com/LKglass-SMU/Project1/blob/main/images/7C626752-83E1-4877-8D43-5389C298C969_1_105_c.jpeg">
 <img src = "https://github.com/LKglass-SMU/Project1/blob/main/images/FCEE908F-7EB8-417C-946D-4E81FE8FE8C8_1_105_c.jpeg">
