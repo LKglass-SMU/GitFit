@@ -1,4 +1,4 @@
-# Project1
+# Git Fit
 
 # Description
 
